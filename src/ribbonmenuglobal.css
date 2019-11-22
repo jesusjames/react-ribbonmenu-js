@@ -4,7 +4,12 @@
     --yellow: #ffcc5c; 
     --indira-primary: #4E2378;
     --indira-secundary: #0B1B41;
-  }
+    --hover-tap: #291753;
+    --active-tap: black;
+    --border-tap: #dadbdc;
+    --text-color: white;
+    --color-taps: #171246;
+}
 
 .ribbon-menu {
     display: block;
@@ -26,17 +31,17 @@
     padding: 0;
     position: relative;
     z-index: 1;
-    border-bottom: 1px solid #dadbdc;
+    border-bottom: 1px solid var(--border-tap);
 }
 
 .ribbon-menu .tabs-holder .static {
     background-color: var(--indira-primary);
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 .ribbon-menu .tabs-holder li {
-    color: white;
-    background-color: #171246;
+    color: var(--text-color);
+    background-color: var(--color-taps);
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
 }
@@ -60,19 +65,19 @@
 }
 
 .ribbon-menu .tabs-holder li:hover, .ribbon-menu .tabs-holder a:hover {
-    background-color: #291753;
+    background-color: var(--hover-tap);
     transition: 0.3s ease;
     cursor: pointer;
 }
 
 .ribbon-menu .tabs-holder .active {
-    background-color: black;
-    border: 1px solid #dadbdc;
+    background-color: var(--active-tap);
+    border: 1px solid var(--border-tap);
     border-bottom-color: transparent;
 }
 
 .ribbon-menu .content-holder {
-    background-color: #f5f6f7;
+    background-color: var(--active-tap);
     border-left: none;
     border-right: none;
 }
@@ -91,12 +96,8 @@
 .ribbon-menu .content-holder .section {
     display: none;
     padding: 4px 4px;
-    border-bottom: 1px solid #dadbdc;
+    border-bottom: 1px solid var(--active-tap);
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-}
-
-.bg-black {
-    background-color: black;
 }

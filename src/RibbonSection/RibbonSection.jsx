@@ -20,7 +20,7 @@ const RibbonSection = (props) => {
         <activeTabContext.Consumer>
             {
               ({activeTabId}) => (
-                <div className={classNames('section tab-pane fade bg-black', className, {'show active': tabId === activeTabId})} 
+                <div className={classNames('section tab-pane fade', className, {'show active': tabId === activeTabId})} 
                     style={{...styleSection, ...styles}}
                     id={tabId} {...rest}>
                     {props.children}

@@ -1,14 +1,19 @@
 import React from 'react';
-import './ribbonmenuglobal.css';
+import './style.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import 'jquery';
+/*import 'jquery';
 import 'popper.js';
-import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/js/bootstrap.js';*/
 
 const RibbonMenu = (props) => {
+
+    const{
+        children,
+        ...rest
+    } = props;
     return(
-        <nav className="ribbon-menu">
-            {props.children}
+        <nav className="ribbon-menu" {...rest}>
+            {children}
         </nav>
     )
 }
