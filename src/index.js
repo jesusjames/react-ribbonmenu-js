@@ -1,9 +1,14 @@
 import RibbonMenu from './RibbonMenu.jsx';
-import RibbonTaps from './RibbonTaps/RibbonTaps.jsx';
-import TapItem from './RibbonTaps/TapItem.jsx';
+import RibbonTabs from './RibbonTabs/RibbonTabs.jsx';
+import TabItem from './RibbonTabs/TabItem.jsx';
+import RibbonContent from './RibbonContent/RibbonContent.jsx';
+import RibbonSection from './RibbonSection/RibbonSection.jsx';
+
 
 export {
     RibbonMenu,
-    RibbonTaps,
-    TapItem
+    RibbonTabs,
+    TabItem,
+    RibbonContent,
+    RibbonSection
 }

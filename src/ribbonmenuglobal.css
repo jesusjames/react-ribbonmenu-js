@@ -1,3 +1,11 @@
+:root {  
+    --red: #ff6f69;  
+    --beige: #ffeead;  
+    --yellow: #ffcc5c; 
+    --indira-primary: #4E2378;
+    --indira-secundary: #0B1B41;
+  }
+
 .ribbon-menu {
     display: block;
     position: relative;
@@ -22,16 +30,15 @@
 }
 
 .ribbon-menu .tabs-holder .static {
-    background-color: #1979ca;
+    background-color: var(--indira-primary);
     color: #ffffff;
 }
 
 .ribbon-menu .tabs-holder li {
-    color: #1d1d1d;
-    background-color: #ffffff;
+    color: white;
+    background-color: #171246;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
-    border-bottom: 1px solid #dadbdc;
 }
 
 .ribbon-menu .tabs-holder li + li {
@@ -50,4 +57,46 @@
     display: block;
     height: 24px;
     line-height: 24px;
+}
+
+.ribbon-menu .tabs-holder li:hover, .ribbon-menu .tabs-holder a:hover {
+    background-color: #291753;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.ribbon-menu .tabs-holder .active {
+    background-color: black;
+    border: 1px solid #dadbdc;
+    border-bottom-color: transparent;
+}
+
+.ribbon-menu .content-holder {
+    background-color: #f5f6f7;
+    border-left: none;
+    border-right: none;
+}
+
+.ribbon-menu .content-holder {
+    display: block;
+    position: relative;
+}
+
+.ribbon-menu .content-holder .section.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.ribbon-menu .content-holder .section {
+    display: none;
+    padding: 4px 4px;
+    border-bottom: 1px solid #dadbdc;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.bg-black {
+    background-color: black;
 }

@@ -55,6 +55,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "styled-components": "^4.4.1"
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
   }
 }

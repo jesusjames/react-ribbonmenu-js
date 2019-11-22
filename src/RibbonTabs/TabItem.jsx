@@ -8,6 +8,7 @@ const TapItem = (props) => {
     let {
         className,
         static: staticTap,
+        active,
         disabled,
         backgroundColor,
         textColor,
@@ -16,13 +17,13 @@ const TapItem = (props) => {
         ...rest
     } = props;
 
-    const classes = classNames(className, {static: staticTap}, {[style.disabled]: disabled});
-    const styleLI = backgroundColor && {backgroundColor: backgroundColor};
+    const classes = classNames(className, {static: staticTap}, {[style.disabled]: disabled}, {active});
+    const styleLI = backgroundColor && {backgroundColor};
         textColor && (styleBG.color = textColor);
     
     return(
         <li className={classes} style={{...styleLI, ...styles}} {...rest} >
-            <a>{text}</a>
+            <a href={null}>{text}</a>
         </li>
     )
 }
@@ -30,6 +31,7 @@ const TapItem = (props) => {
 TapItem.propTypes = {
     static: PropTypes.bool,
     disabled: PropTypes.bool,
+    active: PropTypes.bool,
     backgroundColor: PropTypes.string,
     textColor: PropTypes.string,
     className: PropTypes.string,
@@ -38,7 +40,8 @@ TapItem.propTypes = {
 
 TapItem.defaultProps = {
     static: false,
-    disabled: false
+    disabled: false,
+    active: false
 }
 
 export default TapItem
