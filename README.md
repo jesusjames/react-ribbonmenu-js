@@ -2,7 +2,7 @@
 
 Ribbon Menu component with React
 
-![Screenshot](ribbonmenu.png)
+<img src="https://github.com/jesusjames/react-ribbonmenu-js/blob/master/ribbonmenu.png?raw=true" alt="ribbonmenu.png">
 
 
 ### Installing
@@ -25,7 +25,7 @@ npm install --save react-ribbonmenu-js react react-dom
 
 ## License
 
-This project is licensed under the ISC License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 

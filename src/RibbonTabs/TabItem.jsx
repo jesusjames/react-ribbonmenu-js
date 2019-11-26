@@ -17,7 +17,7 @@ const TapItem = (props) => {
         ...rest
     } = props;
 
-    const classes = classNames(className, {static: staticTap}, {[style.disabled]: disabled}, {active});
+    const classes = classNames(className, {'static': staticTap}, {[style.disabled]: disabled}, {active});
     const styleLI = backgroundColor && {backgroundColor};
         textColor && (styleBG.color = textColor);
     

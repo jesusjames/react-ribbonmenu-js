@@ -1,6 +1,6 @@
 {
   "name": "react-ribbonmenu-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ribbon menu component",
   "main": "build/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jesusjames/ribbon-menu-js.git"
+    "url": "git+https://github.com/jesusjames/react-ribbonmenu-js.git"
   },
   "keywords": [
     "ribbon",
@@ -19,9 +19,9 @@
   "author": "Jesus Santiago Tovar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jesusjames/ribbon-menu-js/issues"
+    "url": "https://github.com/jesusjames/react-ribbonmenu-js/issues"
   },
-  "homepage": "https://github.com/jesusjames/ribbon-menu-js#readme",
+  "homepage": "https://github.com/jesusjames/react-ribbonmenu-js#readme",
   "peerDependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
