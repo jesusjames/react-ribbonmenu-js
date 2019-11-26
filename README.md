@@ -2,6 +2,8 @@
 
 Ribbon Menu component with React
 
+![Screenshot](ribbonmenu.png)
+
 
 ### Installing
 
@@ -19,7 +21,7 @@ npm install --save react-ribbonmenu-js react react-dom
 
 ## Authors
 
-* **Jesus Santiago Tovar** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Jesus Santiago Tovar** - *Initial work* - [jesusjames](https://github.com/jesusjames)
 
 ## License
 

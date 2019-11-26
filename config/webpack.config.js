@@ -46,7 +46,6 @@ module.exports = {
         exclude: /\.module\.css$/
       },
       { test: /\.(png|jpg|gif|cur)$/, use: 'url-loader?limit=81920' },
-      { test: /\.svg$/, use: [{ loader: 'raw-loader' }] },
       { test: /\.html$/, loader: 'html-loader' },
       {
         test: /\.ico$/,
@@ -55,16 +54,9 @@ module.exports = {
         }],
       },
       {
-        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use: [{
-            loader: 'url-loader?limit=10000&mimetype=application/font-woff'
-        }],
-      },
-      {
-        test: /\.(ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use: [{
-            loader: 'file-loader'
-        }]
+        test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+        include: [path.join(__dirname, "src/assets")],
+        loader: "file-loader?name=assets/[name].[ext]"
       }
     ],
   }

@@ -13,17 +13,18 @@
     --color-taps: #171246;
     --ribbon-toggle-group: #0d0021;
     --ribbon-button-hover: rgb(138, 14, 163);
+    --ribbon-button-active: rgb(37, 5, 82);
 }
 
 .selected {
-    -webkit-box-shadow: 0 0 0 4px #5ebdec !important;
-    box-shadow: 0 0 0 4px #5ebdec !important
+    -webkit-box-shadow: 0 0 0 4px var(--ribbon-button-active) !important;
+    box-shadow: 0 0 0 4px var(--ribbon-button-active) !important
 }
 
 .selected::after {
     position: absolute;
     display: block;
-    border-top: 28px solid #5ebdec;
+    border-top: 28px solid var(--ribbon-button-active);
     border-left: 28px solid transparent;
     right: -1px;
     content: "";
@@ -22921,154 +22922,6 @@ input:-webkit-autofill:hover {
     box-shadow: 0 40px 77px 0 rgba(0, 0, 0, .22), 0 27px 24px 0 rgba(0, 0, 0, .2)
 }
 
-.img-container,
-.img-fluid,
-.img-thumbnail {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    position: relative;
-    vertical-align: middle;
-    background-color: transparent;
-    -webkit-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    overflow: visible
-}
-
-.img-thumbnail {
-    padding: .25rem;
-    border: 1px solid #dfdfdf;
-    border-radius: .25rem;
-    background-color: var(--text-color)
-}
-
-.img-container {
-    display: block
-}
-
-.img-container img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    position: relative
-}
-
-.img-container .image-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    overflow: hidden;
-    font-size: .875rem;
-    line-height: 1rem;
-    padding: 2em;
-    background-color: rgba(27, 161, 226, .7);
-    color: var(--text-color);
-    text-align: center;
-    border-radius: inherit;
-    -webkit-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out
-}
-
-.img-container .image-overlay * {
-    color: var(--text-color)
-}
-
-.img-container .image-overlay:hover {
-    opacity: 1
-}
-
-.img-container .image-overlay:hover:after,
-.img-container .image-overlay:hover:before {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1)
-}
-
-.img-container .image-overlay:after,
-.img-container .image-overlay:before {
-    display: block;
-    position: absolute;
-    content: "";
-    border: 1px solid rgba(255, 255, 255, .7);
-    top: 1em;
-    bottom: 1em;
-    left: 1em;
-    right: 1em;
-    opacity: 0;
-    border-radius: inherit;
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
-    -webkit-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out
-}
-
-.img-container .image-overlay:after {
-    border-left: none;
-    border-right: none;
-    bottom: 1em;
-    top: 1em
-}
-
-.img-container .image-overlay:before {
-    border-top: none;
-    border-bottom: none;
-    bottom: 1em;
-    top: 1em
-}
-
-.img-container.rounded img {
-    border-radius: .25rem
-}
-
-.img-container.thumbnail {
-    padding: .25rem;
-    border: 1px solid #dfdfdf;
-    background-color: var(--text-color)
-}
-
-.img-container.thumbnail .title {
-    font-size: .9rem;
-    line-height: 1
-}
-
-.img-container img+.title {
-    margin-top: .25rem
-}
-
-.img-container .title+img {
-    margin-top: .25rem
-}
-
-.img-container.cover {
-    background-size: cover;
-    background: no-repeat 100% 100%
-}
-
-figure {
-    margin: 0 0 1rem
-}
-
-figure img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    position: relative;
-    vertical-align: middle;
-    background-color: transparent;
-    -webkit-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out
-}
 
 .ani-hover-spin:hover,
 .ani-spin {
@@ -41993,6 +41846,7 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
 .ribbon-tool-button {
     cursor: pointer;
     min-width: 0;
+    line-height: normal;
     text-align: center;
     border: 1px solid transparent;
     background-color: var(--active-tap);
@@ -42371,14 +42225,14 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
 .ribbon-tool-button.active,
 .ribbon-tool-button:active {
     border-color: var(--indira-primary);
-    background-color: rgba(164, 206, 249, .8) !important
+    background-color: var(--ribbon-button-active) !important
 }
 
 .ribbon-menu .active-container .ribbon-button,
 .ribbon-menu .active-container .ribbon-icon-button,
 .ribbon-menu .active-container .ribbon-tool-button {
     border-color: var(--indira-primary);
-    background-color: rgba(164, 206, 249, .8) !important
+    background-color: var(--ribbon-button-active) !important
 }
 
 .app-bar {
