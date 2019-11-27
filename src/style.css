@@ -7,6 +7,7 @@
     --hover-tap: #291753;
     --active-tap: black;
     --border-tap: #dadbdc;
+    --border-group: #88898a;
     --text-color: white;
     --text-caption: #dadbdc;
     --text-group: #a1a1a1;
@@ -41817,7 +41818,7 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
     height: 20px;
     font-size: 11px;
     text-align: center;
-    border-top: 1px solid var(--border-tap);
+    border-top: 1px solid var(--border-group);
     color: var(--text-group);
     white-space: nowrap;
 }
@@ -41828,7 +41829,7 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
     height: 100%;
     margin: 0 4px;
     width: 1px;
-    background-color: var(--border-tap)
+    background-color: var(--border-group)
 }
 
 .ribbon-menu .content-holder .group>:not(.group-divider),
@@ -41837,7 +41838,7 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
 }
 
 .ribbon-menu .content-holder .group+.group {
-    border-left: 1px solid var(--border-tap)
+    border-left: 1px solid var(--border-group)
 }
 
 .ribbon-button,
@@ -42079,7 +42080,7 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
     background-color: #fbfcfd;
     color: #1d1d1d;
     padding: 2px;
-    border: 1px solid var(--border-tap);
+    border: 1px solid var(--border-group);
     font-size: 12px;
     -webkit-box-shadow: 2px 2px 2px 0 rgba(227, 228, 229, .7);
     box-shadow: 2px 2px 2px 0 rgba(227, 228, 229, .7);
@@ -42196,7 +42197,7 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     max-height: 80px;
-    border: 1px solid var(--border-tap);
+    border: 1px solid var(--border-group);
     width: auto
 }
 
