@@ -1,3 +1,6 @@
+:root {
+    --disabled-button: #888888;
+}
 .active {
     background-color: #f5f6f7;
     border: 1px solid #dadbdc;
@@ -6,5 +9,5 @@
 
 .disabled {
     pointer-events: none !important;
-    color: #9c9c9c  !important;
+    color: var(--disabled-button)  !important;
 }

@@ -7,9 +7,7 @@ Ribbon Menu component with React
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Using npm
 
 ```
 npm install --save react-ribbonmenu-js react react-dom
