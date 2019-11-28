@@ -8,6 +8,11 @@ module.exports = {
     filename: 'index.js',
     libraryTarget: 'umd',
   },
+  devtool: 'source-map',
+  performance: {
+    maxEntrypointSize: 5120000,
+    maxAssetSize: 5120000
+  },
   externals: externalReact.externals,
   module: {
     rules: [
