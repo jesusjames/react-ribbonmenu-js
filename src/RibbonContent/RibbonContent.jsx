@@ -6,10 +6,6 @@ import classNames from 'classnames';
 
 export class RibbonContent extends PureComponent {
 
-    constructor(props) {
-        super(props);
-    }
-
     render(){
         const {
             activeTab,
