@@ -72,14 +72,34 @@ export class App extends Component {
                             </RibbonButton>
                             <DividerGroup/>
                             <div className="d-flex flex-column">
-                                <RibbonControlsCategorys clickButton={this.clickActionCategory}
-                                    categorys={this.state.categorys}/>
+                                <RibbonButton iconLeft={true} className={classNames({'active': category.active})}
+                                    onContextMenu={(e) => {e.preventDefault()}}
+                                    onClick={(e) => console.log('any function')}>
+                                    <Icon image={false} className="indira-icono-arrastrar"/>
+                                    <Caption text="Arrastrar"/>
+                                </RibbonButton>
+                                <RibbonButton iconLeft={true} className={classNames({'active': category.active})}
+                                    onContextMenu={(e) => {e.preventDefault()}}
+                                    onClick={(e) => console.log('any function')}>
+                                    <Icon image={false} className="indira-icono-anotacion"/>
+                                    <Caption text="Anotar"/>
+                                </RibbonButton>
+                                <RibbonButton iconLeft={true} className={classNames({'active': category.active})}
+                                    onContextMenu={(e) => {e.preventDefault()}}
+                                    onClick={(e) => console.log('any function')}>
+                                    <Icon image={false} className="indira-icono-segmentacion"/>
+                                    <Caption text="Pintar"/>
+                                </RibbonButton>
                             </div>
 
                             <RibbonToggleGroup style={{width: this.state.widthGroupControls}}>
-                                <RibbonControlsCore clickButton={this.clickActionControl}
-                                    controls={this.state.controls}
-                                    categorys={this.state.categorys}/>
+                                <RibbonButton iconLeft={true} className={classNames({'active': ctrl.active})}
+                                    style={{height: 32}} onMouseDown={(e) => clickButton(e, ctrl.id)}
+                                    onContextMenu={(e) => {e.preventDefault()}}>
+                                    <Icon image={false} className={ctrl.iconClasses} style={{fontSize: 25}}/>
+                                    <Caption text="Scroll"/>
+                                </RibbonButton>
+                                ...
                             </RibbonToggleGroup>
                         </RibbonGroup>
                     </RibbonSection>
@@ -106,9 +126,3 @@ export default App;
 ## License
 
 This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc

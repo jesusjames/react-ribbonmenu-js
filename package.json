@@ -1,11 +1,12 @@
 {
   "name": "react-ribbonmenu-js",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Ribbon menu component",
   "main": "build/index.js",
   "scripts": {
     "start": "webpack --mode development --config config/webpack.config.js --watch",
     "build": "webpack --mode production --config config/webpack.config.js --progress",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,8 +24,8 @@
   },
   "homepage": "https://github.com/jesusjames/react-ribbonmenu-js#readme",
   "peerDependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -44,10 +45,8 @@
     "eslint-plugin-react": "^7.16.0",
     "eslint-watch": "^6.0.1",
     "path": "^0.12.7",
-    "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
@@ -56,6 +55,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "jquery": "^3.4.1",
-    "popper.js": "^1.16.0"
+    "popper.js": "^1.16.0",
+    "prop-types": "^15.7.2"
   }
 }
