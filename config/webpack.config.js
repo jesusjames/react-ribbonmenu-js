@@ -4,7 +4,7 @@ const externalReact = require('webpack-external-react')
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, '../build'),
+    path: path.resolve(__dirname, '../dist'),
     filename: 'index.js',
     libraryTarget: 'umd',
   },
