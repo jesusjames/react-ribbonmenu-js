@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-export class RibbonGroup extends PureComponent {
+class RibbonGroup extends PureComponent {
 
     render(){
 

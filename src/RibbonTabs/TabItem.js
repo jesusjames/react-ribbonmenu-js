@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import style from '../ribbonmenu.module.css';
 
 const TapItem = (props) => {
 
@@ -17,9 +16,9 @@ const TapItem = (props) => {
         ...rest
     } = props;
 
-    const classes = classNames(className, {'static': staticTap}, {[style.disabled]: disabled}, {active});
+    const classes = classNames(className, {'static': staticTap}, {'disabled': disabled}, {active});
     const styleLI = backgroundColor && {backgroundColor};
-        textColor && (styleBG.color = textColor);
+        textColor && (styleLI.color = textColor);
     
     return(
         <li className={classes} style={{...styleLI, ...styles}} {...rest} >

@@ -1,9 +1,8 @@
-import React, {PureComponent} from 'react'
+import React, {Component} from 'react'
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import styleCom from '../ribbonmenu.module.css'
 
-export class RibbonButton extends PureComponent {
+class RibbonButton extends Component {
     render() {
 
         let {
@@ -17,7 +16,7 @@ export class RibbonButton extends PureComponent {
 
         return(
             <button className={classNames(className, {"ribbon-button": !iconLeft && !dropdown}, {'ribbon-icon-button': iconLeft}, 
-                {'dropdown-toggle': dropdown}, {[styleCom.disabled]: disabled})} {...rest}>
+                {'dropdown-toggle': dropdown}, {'disabled': disabled})} {...rest}>
                 {children}
             </button>
         )

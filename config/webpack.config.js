@@ -8,7 +8,6 @@ module.exports = {
     filename: 'index.js',
     libraryTarget: 'umd',
   },
-  devtool: 'source-map',
   performance: {
     maxEntrypointSize: 5120000,
     maxAssetSize: 5120000
@@ -28,27 +27,8 @@ module.exports = {
         exclude: /(node_modules|build)/,
         use: [
           'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-              modules: true,
-              modules: {
-                localIdentName: "[name]__[local]___[hash:base64:5]"
-              }
-            }
-          }
-        ],
-        include: /\.module\.css$/
-      },
-      {
-        test: /\.css$/,
-        exclude: /(node_modules|build)/,
-        use: [
-          'style-loader',
           'css-loader'
-        ],
-        exclude: /\.module\.css$/
+        ]
       },
       { test: /\.(png|jpg|gif|cur)$/, use: 'url-loader?limit=81920' },
       { test: /\.html$/, loader: 'html-loader' },

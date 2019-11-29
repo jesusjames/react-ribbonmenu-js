@@ -1,7 +1,6 @@
 import React from 'react'
 import classNames from 'classnames';
 import { PropTypes } from 'prop-types';
-import styleCom from '../ribbonmenu.module.css';
 
 const Caption = props => {
 
@@ -13,7 +12,7 @@ const Caption = props => {
     } = props;
 
     return(
-        <span className={classNames("caption", className, {[styleCom.disabled]: disabled})} {...rest}>
+        <span className={classNames("caption", className, {'disabled': disabled})} {...rest}>
             {text}
         </span>
     )

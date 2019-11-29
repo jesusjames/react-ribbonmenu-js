@@ -119,6 +119,10 @@ export default App;
 
 * [React](https://es.reactjs.org/) - The web framework used
 
+## Docs
+
+I will create the documentation when I finish the whole component
+
 ## Authors
 
 * **Jesus Santiago Tovar** - *Initial work* - [jesusjames](https://github.com/jesusjames)

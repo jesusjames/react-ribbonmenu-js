@@ -10,6 +10,7 @@ const RibbonSection = (props) => {
         backgroundColor,
         textColor,
         style: styles,
+        children,
         ...rest,
     } = props;
 
@@ -23,7 +24,7 @@ const RibbonSection = (props) => {
                 <div className={classNames('section tab-pane fade', className, {'show active': tabId === activeTabId})} 
                     style={{...styleSection, ...styles}}
                     id={tabId} {...rest}>
-                    {props.children}
+                    {children}
                 </div>
               )
             }
