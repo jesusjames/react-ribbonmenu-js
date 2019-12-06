@@ -5,7 +5,7 @@ class RibbonMenu extends PureComponent {
 
     constructor(props){
         super(props);
-        console.log('%creact-ribbonmenu-js v1.1.0', 'background: #339955; padding: 4px; font-weight: bold; color: white');
+        console.log('%creact-ribbonmenu-js v1.1.1', 'background: #339955; padding: 4px; font-weight: bold; color: white');
     }
 
     render(){
